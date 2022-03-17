@@ -11,4 +11,4 @@ def list_dir_start_with_deep(path):
 
 if __name__== '__main__':
     path='C:\\Users\\user\\Desktop\\ortalYatzkan'
-    print(find_deep_strat_directory(path))
+    print(list_dir_start_with_deep(path))
