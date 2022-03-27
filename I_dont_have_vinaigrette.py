@@ -28,7 +28,7 @@ def get_random_date_in_range(start_date:datetime.date,end_date:datetime.date)->d
     return random_date
 
 
-def get_if_is_monday(random_date):
+def get_if_is_monday(random_date:datetime.date)->bool:
     """
     Check if the random day is Monday.
     :param random_date:Random date to check.
