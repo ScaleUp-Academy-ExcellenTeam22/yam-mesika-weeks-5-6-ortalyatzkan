@@ -11,7 +11,7 @@ def get_recipe_price(prices:list,optionals='', **ingredients)->int:
     :return:The price.
     """
     final_price=0
-    final_price = reduce(lambda price,product:price+prices.get(product)*ingredients.get(product)/100  if (product not in optionals) else price, prices,0)
+    final_price = reduce(lambda price,product:price+prices.get(product)*ingredients.get(product)/100  if product not in optionals else price, prices,0)
     return final_price
 
 
