@@ -8,6 +8,7 @@ def  print_random_date(start_date:datetime.date, end_date:datetime.date)-> None:
     A function that prints a random date in range and if the date Monday prints :"I do not have a vinaigrette".
     :param start_date: start_date:Start date of the range(format YYYY-MM-DD).
     :param end_date: end_date:End date of the range (format YYYY-MM-DD).
+    :return:None.
     """
     random_date = get_random_date_in_range(start_date, end_date)
     print(random_date)
